@@ -32,7 +32,7 @@ function App() {
       <div className="relative">
       <img src={nineTeen} className="w-[150px] absolute top-0 right-0 mt-[-8rem] mr-5" alt="1989 album print"></img>
      </div>
-     <header className="title text-8xl font-bold py-2 font-['Bodoni_Moda'] font-semibold uppercase">
+     <header className="title text-6xl font-bold py-2 font-['Bodoni_Moda'] font-semibold uppercase">
       The Eras Tour
      </header>
      <h1 className="text-4xl font-bold py-2 font-['Bodoni_Moda'] font-semibold uppercase">Personality Test</h1>

@@ -23,27 +23,29 @@ function Question() {
             const question = questions[currentQuestion];
 
             return (
-                <div className="question text-3xl">
+                <div className="question text-xl">
                     <h2 className="pb-5">{question.text}</h2>
                    
-                    <button className="choice text-xl space-y-5 p-5 ">
+                    <button className="choice text-lg space-y-5 p-5 ">
                        
                         {question.choices.map((answer, index) => (
                             <button key = {index}
                             onClick={() => handleAnswer(answer)}
-                            className="flex flex-col rounded outline outline-2 outline-offset-4 outline-[#d8d4ce] hover:bg-[#7796cb]"
+                            className="grid grid-cols hover:bg-[#7796cb]"
                             >
                                 {answer}
                             </button>
+                   
                         ))}
                        
                     </button>
-                 
+                  
                 </div>
+                
             )
         }
     }
-
+ 
     return (
         <div>{renderQuestion()}</div>
     )
