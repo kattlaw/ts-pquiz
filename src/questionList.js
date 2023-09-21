@@ -11,9 +11,9 @@ export const questions = [
             'Stick close to the few people you know', //speak now
             'Enjoy the music and ambiance regardless of who`s around', //1989
             'Try to have meaningful conversations with a few people', //lover
-            'Embrace the opportunity to learn from others` experiences', //folklover/evermore
-            '', //midnights
-            '' //debut
+            'Embrace the opportunity to learn from others` experiences', //folklore/evermore
+            'Show up bejeweled', //midnights
+            'Hesitantly, but with an open mind' //debut
         ]  
     },
     {
@@ -29,8 +29,8 @@ export const questions = [
             'Write a song or story about the experience and use it as a way to cope', //rep
             'Accept the change gracefully and focus on your own personal growth', //lover
             'Reflect on the past and stay hopeful for the future', //folklore/evermore
-            '', //debut
-            '' //midnights
+            '..', //debut
+            '..' //midnights
         ]
     },
     {
@@ -39,10 +39,10 @@ export const questions = [
         text: 'You find an old diary from your teenage years. What do you do with it?',
         choices: 
         [
-            'Re-read it and relive the memories', //fearless
-            '', //debut
+            '-Re-read it and relive the memories', //fearless
+            '..', //debut
             'Use it as inspiration for a creative project', //red
-            '', //midnights
+            '..', //midnights
             'Share some of the entries with close friends for a laugh', //1989
             'Reflect on how much you`ve changed and grown since then',  //speak now
             'Burn it to let go of the past', //rep
@@ -57,8 +57,8 @@ export const questions = [
         choices: 
         [
             'Bold and daring', //rep
-            '', //midnights
-            '', //debut
+            '..', //midnights
+            '..', //debut
             'Sweet and romantic', //lover
             'Vintage and nostalgic', //red
             'Trendy and fashionable', //1989
@@ -78,6 +78,8 @@ export const questions = [
             'The 1960s for the cultural revolution and music', //red
             'The Medieval period for the knights and chivalry', //speak now
             'Ancient Rome for the power and strategy', //rep
+            '..', //midnights
+            '..', //debut
             'The 1970s for the peace, love, and folk music', //folklore/evermore
             'The Wild West for the adventure and freedom' //fearless
         ]
@@ -94,6 +96,8 @@ export const questions = [
             'Have an open conversation to understand their perspective', //speaknow
             'Plot your revenge and regain control', //rep
             'Forgive them and focus on love and positvity', //lover
+            '..', //midnights
+            '..', //debut
             'Reflect on the layers of truth and deceit in the world' //folklore/evermore
         ]
     
@@ -108,6 +112,8 @@ export const questions = [
             'A romantic, moonlit garden', //lover
             'A fiery phoenix rising from the ashes', //red
             'A fairytale castle with a secret passage', //speak now
+            'A sharp cat eye', //midnights
+            '..', //debut
             'A throne to show the world who`s boss', //rep
             'A serene forest glen with a trickling stream', //folklore/evermore
             'A gallant, wild horse' //fearless
@@ -117,7 +123,7 @@ export const questions = [
     {
         id: 8,
         value:"D",
-        text: 'You`re at a crosswords with two paths: one leads to an unknown adventure, the other to a familiar, comfortable place. Which do you choose?',
+        text: 'You`re at a crossroads with two paths: one leads to an unknown adventure, the other to a familiar, comfortable place. Which do you choose?',
         choices: 
         [
             'The unknown adventure, without a second thought', //fearless
@@ -126,7 +132,9 @@ export const questions = [
             'The familiar place, and cherish the memories it holds', //red
             'The unknown adventure, with a bold stride and determination', //rep
             'The familiar place, and revel in the warmth of love', //lover
-            'The unknown adventure, with a sense of poetic wonder' //folklore/evermore
+            'The unknown adventure, with a sense of poetic wonder', //folklore/evermore
+            '..', //debut
+            '..' //midnights
         ]
     
     },
@@ -136,12 +144,12 @@ export const questions = [
         text: 'You are granted one wish. What would it be?',
         choices: 
         [
-            'To experience an epic, unforgettable love story', //fearless
             'To have power to make a difference in the world', //speak now
             'To live a life full of thrilling, unexpected adventures', //1989
             'To channel intense emotions into artistic masterpieces', //red
             'To achieve undeniable success and recognition', //rep
             'To be surrounded by love and genuine connections', //lover
+            'To experience an epic, unforgettable love story', //fearless
             'To find wisdom and meaning in life`s mysteries', //folklore/evermore
             'To feel the excitement and innocence of first love', //debut
             '' //midnights
@@ -206,14 +214,14 @@ export const questions = [
         text: 'You find a mysterious book that allows you to rewrite your own past. What would you change?',
         choices: 
         [
-            'I`d make myself bolder and more confident', //fearless
             'I`d relive my first love and change how it ended', //debut
             'I`d embrace my emotions more and express them openly', //red
+            'I`d make myself bolder and more confident', //fearless
             'I`d stand up for myself and speak my mind', //speak now
             'I`d project a stronger image of myself', //rep
             'I`d focus on cherishing the love I have', //lover
             'I`d add more moments of quiet reflection and inspiration', //folklore/evermore
-            '',//midnights
+            '..',//midnights
             'I`d savior the exhiliration and spontaneity of my youth' //1989
         ]
     },
@@ -230,7 +238,7 @@ export const questions = [
             'A mask with a fierce, dominant look', //rep
             'A mask with a radiant, loving smile', //lover
             'A mask with a serence, thoughtful expression', //folklore/evermore
-            'A mask with starts and moon patterns', //midnights
+            'A mask with stars and moon patterns', //midnights
             'A mask with a vibrant and trendy design' //1989
         ]
     },
@@ -264,7 +272,7 @@ export const questions = [
             'Analyzing power dynamics and leadership', //rep
             'Celebrating love and joyful connections', //lover
             'Exploring deep thoughts and artistic creations', //folklore/evermore
-            '', //midnights
+            'Late night introspectives', //midnights
             'Highlighting pop culture and trendy lifestyles' //1989
         ]
     },
@@ -316,6 +324,7 @@ export const questions = [
             '80s punk', //fearless
             '80s neon colors',//1989
             '90s grunge', //rep 
+            '' //midnights
         ]
     },
     {
@@ -330,7 +339,9 @@ export const questions = [
             '', //
             '', //
             '', //
-            '' //
+            '', //
+            '', //midnights
+            '', //debut
         ]
     },
 ]

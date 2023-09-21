@@ -1,27 +1,38 @@
-import { useState } from 'react';
-import './App.css';
-import Question from './Question.js';
-import taylor from './img/white-logo.png';
-import erasPics from './img/eras-pics.png';
-import nineTeen from './img/1989-logo.png';
-import redLogo from './img/red-album.png';
-import folklore from './img/folklore.png';
-import evermore from './img/evermore.png';
-import lover from './img/lover-pink.png';
-import reputation from './img/replogo.png';
-import midnights from './img/midnights.png';
-import speaknow from './img/speaknow.png';
-import fearless from './img/fearless .png';
+
+import { Routes, Route } from 'react-router-dom';
+import './Main.css';
+import Question from './components/Question.js';
+import Main from './components/Main.js';
+
 
 function App() {
 
-  const [showStart, setShowStart] = useState(false);
+  
+  //for clicked links to scroll to top position of each page component on load
+  
+
+  return (
+    <div>
+    
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route path="/Questions" element={<Question />} />
+      </Routes>
+    
+    </div>
+  );
+}
+
+ {/*} const [showStart, setShowStart] = useState(false);
+
 
   function handleStartClick() {
     setShowStart(!showStart);
   }
 
+
   return (
+    
     <div className="App">
       <div className="name-image -rotate-12 -mb-14 mb-5 w-[250px] ml-4">
         <img src={taylor} className="mt-10 mb-6" alt="taylor swift album logo"></img>
@@ -36,6 +47,7 @@ function App() {
       The Eras Tour
      </header>
      <h1 className="text-4xl font-bold py-2 font-['Bodoni_Moda'] font-semibold uppercase">Personality Test</h1>
+     
     <div className="">
     </div>
     <div className="relative">
@@ -44,11 +56,14 @@ function App() {
     <div className="relative">
       <img src={fearless} className="w-[200px] absolute top-0 right-0 mr-5 mt-5" alt="speaknow album print"></img>
      </div>
-      <button className="p-16 text-xl font-['Bodoni_Moda'] font-semibold underline decoration-solid" onClick={handleStartClick}>
-          {showStart ? '' : ''}
-        Are You Ready For It...?
+    <Link to='/questions'></Link>
+     
+      <button className="p-16 text-3xl font-['IM_Fell_DW_Pica'] " onClick={handleStartClick}> 
+          {showStart ? '' : '(start)' } 
+  
      </button>
-     {showStart && <Question />}
+     {showStart && <Question /> }
+  
      <div className="relative">
       <img src={evermore} className="absolute inset-y-0 left-0 w-[200px] ml-4 mt-[6rem]" alt="evermore album logo"></img>
      </div>
@@ -67,9 +82,7 @@ function App() {
      <div className="flex justify-center">
       <img src={midnights} className="w-[230px] mb-4 mt-4" alt="midnights album logo"></img>
      </div>
-
     </div>
-  );
-}
-
+  */}
+  
 export default App;
