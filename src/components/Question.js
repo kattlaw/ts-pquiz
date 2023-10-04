@@ -42,12 +42,12 @@ const Question = () => {
                         Personality Test
                     </h1>
                  
-                    <div className="text-[29px] font-['IM_Fell_DW_Pica'] tracking-wide mt-[5rem]">
+                    <div className="text-2xl md:text-[29px] font-['IM_Fell_DW_Pica'] tracking-wide mt-[5rem]">
                    
                         <h2 className="pb-5">{question.text}</h2>
-                    <div className="container mx-auto max-w-3xl">
+                    <div className="container mx-auto max-w-md md:max-w-3xl">
                   
-                            <button className="flex flex-col gap-y-1 m-auto text-xl space-y-5 p-5 font-['Schibsted_Grotesk']">
+                            <button className="flex flex-col md:m-auto text-[14px] md:text-xl space-y-1 p-5 md:space-y-5 font-['Schibsted_Grotesk']">
                        
                             {question.choices.map((answer, index) => (
                                 <button key = {index}
